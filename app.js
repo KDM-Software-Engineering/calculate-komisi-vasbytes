@@ -10,7 +10,15 @@
 
 // TULIS SCRIPT KAMU DI SINI
 
-
+function calculateKomisi(nilaiKontrak) {
+  if (nilaiKontrak < 1000000) {
+    return 0
+  } else if (nilaiKontrak < 5000000) {
+    return 100000
+  } else if (nilaiKontrak >= 5000000) {
+    return 5/100 * nilaiKontrak
+  }
+}
 
 // JANGAN HAPUS / UBAH SCRIPT DI BAWAH
 module.exports = calculateKomisi
